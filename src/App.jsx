@@ -1,15 +1,15 @@
 import Header from './assets/componentes/Header.jsx';
-import Carousel from './assets/componentes/carousel.jsx';
-import Menu from './assets/componentes/menu.jsx';
+import Carousel from './assets/componentes/Carousel.jsx';
+import Menu from './assets/componentes/Menu.jsx';
 import Cards from './assets/componentes/Cards.jsx';
-import Productos from './assets/componentes/productos.jsx';
+import Productos from './assets/componentes/Productos.jsx';
 
 import './index.css';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Registro from "./assets/componentes/registro.jsx";
-import Login from "./assets/componentes/login.jsx";
+import Registro from "./assets/componentes/Registro.jsx";
+import Login from "./assets/componentes/Login.jsx";
 
 function App() {
   return (
