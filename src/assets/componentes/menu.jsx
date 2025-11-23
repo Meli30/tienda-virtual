@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Menu = () => {
   return (      
 
-<div className='rounded-2xl bg-amber-700 flex justify-between gap-20 w-full text-center'>
+<div className='rounded-2xl bg-amber-700 flex justify-between gap-20 w-full text-center text-white'>
           
           <ul className='flex justify-evenly p-2 gap-10 w-full rounded-2xl'>
             <Link to="/productos">
