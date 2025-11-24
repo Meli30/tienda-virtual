@@ -1,31 +1,75 @@
 import { Link } from "react-router-dom";
 
 const Menu = () => {
-  return (      
+ return (
+  <div className="bg-amber-700 text-white rounded-2xl w-full">
+  <nav className="flex flex-row justify-around items-center p-2 
+                  sm:flex-row sm:justify-around">
 
-<div className='rounded-2xl bg-amber-700 flex justify-between gap-20 w-full text-center text-white'>
-          
-          <ul className='flex justify-evenly p-2 gap-10 w-full rounded-2xl'>
-            <Link to="/productos">
-            <li className="hover:text-yellow-400 cursor-pointer p-4"> 🛒 Productos</li>
-            </Link>
-          </ul>
+    {/* PRODUCTOS */}
+    <Link to="/productos" className="relative group">
+      <li className="list-none cursor-pointer p-3 text-center hover:text-yellow-400">
 
-          <ul className='flex justify-evenly p-2 gap-10 w-full rounded-2xl'>
-            <Link to="/whatsapp"> 
-            <li className="hover:text-yellow-400 cursor-pointer p-4">📱 Accesoriamiento por whatsapp</li>
-            </Link>
-          </ul>
+        {/* Ícono en CELULAR */}
+        <span className="text-2xl sm:hidden">🛒</span>
 
-          <ul className='flex justify-evenly p-2 gap-10 w-full rounded-2xl'>
-            <Link to="/ofertas">  
-            <li className="hover:text-yellow-400 cursor-pointer p-4">🔥 Ofertas</li>
-            </Link>
-          </ul>
+        {/* Texto en COMPUTADORA */}
+        <span className="hidden sm:inline">🛒 Productos</span>
 
-               
-          </div>
-);
+        {/* Tooltip solo en CELULAR */}
+        <span className="
+          absolute left-1/2 -translate-x-1/2 top-full mt-1
+          w-max bg-black text-white text-xs rounded-md px-2 py-1 opacity-0
+          group-hover:opacity-100 transition-opacity
+          sm:hidden
+        ">
+          Productos
+        </span>
+      </li>
+    </Link>
+
+    {/* WHATSAPP */}
+    <Link to="/whatsapp" className="relative group">
+      <li className="list-none cursor-pointer p-3 text-center hover:text-yellow-400">
+
+        <span className="text-2xl sm:hidden">📱</span>
+        <span className="hidden sm:inline">📱 Accesoramiento por WhatsApp</span>
+
+        <span className="
+          absolute left-1/2 -translate-x-1/2 top-full mt-1
+          w-max bg-black text-white text-xs rounded-md px-2 py-1 opacity-0
+          group-hover:opacity-100 transition-opacity
+          sm:hidden
+        ">
+          Accesoramiento por WhatsApp
+        </span>
+      </li>
+    </Link>
+
+    {/* OFERTAS */}
+    <Link to="/ofertas" className="relative group">
+      <li className="list-none cursor-pointer p-3 text-center hover:text-yellow-400">
+
+        <span className="text-2xl sm:hidden">🔥</span>
+        <span className="hidden sm:inline">🔥 Ofertas</span>
+
+        <span className="
+          absolute left-1/2 -translate-x-1/2 top-full mt-1
+          w-max bg-black text-white text-xs rounded-md px-2 py-1 opacity-0
+          group-hover:opacity-100 transition-opacity
+          sm:hidden
+        ">
+          Ofertas
+        </span>
+      </li>
+    </Link>
+
+  </nav>
+</div>
+
+
+ )
+
 }
 
 export default Menu;
