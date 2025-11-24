@@ -45,7 +45,7 @@ const Header = () => {
 
           {/* Dropdown */}
           {open && (
-            <div className="absolute top-full right-0 mt-2   shadow-lg rounded-lg p-2 flex flex-col text-lg z-50">
+            <div className="absolute top-full right-0 mt-2 bg-yellow-300 rounded-lg p-2 flex flex-col text-xl z-50">
               {usuario ? (
                 <>
                   <button
@@ -83,11 +83,11 @@ const Header = () => {
           <p>✉️ buscandonombre@gmail.com</p>
         </div>
 
-        <div className="flex bg-amber-600 p-2 rounded-2xl w-200 ">
+        <div className="flex bg-amber-600 p-2 rounded-2xl">
           <input
             type="text"
             placeholder="Buscar productos..."
-            className="p-2 rounded-l-2xl bg-amber-200 text-black w-200"
+            className="p-2 rounded-l-2xl bg-amber-200 text-black"
           />
           <button className="bg-amber-700 p-2 rounded-r-2xl hover:bg-amber-500 text-white">
             Buscar
