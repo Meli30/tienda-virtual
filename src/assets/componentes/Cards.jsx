@@ -10,60 +10,64 @@ import {Link} from 'react-router-dom'
 const Cards = () => {
   return (
      <div className="p-6 bg-gray-100">
-        <h2 className="text-2xl font-bold mb-4 text-center">Nuestros Productos</h2>
-        <div className="flex flex-cols-1 sm:flex-cols-2 md:flex-cols-3 lg:flex-cols-4
-         justify-center items-center gap-6 mx-auto max-w-8xl">   
+  <h2 className="text-2xl font-bold mb-4 text-center">Nuestros Productos</h2>
 
-            {/* Tarjeta de Lenceria */}  
-            <Link to="/productos"> 
-            <div className="bg-white rounded-lg shadow-md overflow-hidden transition-shadow duration-300">
-                <img src={imgLenceria} 
-                     alt="Producto 1" 
-                     className="object-center"/>   
-            </div>
-            </Link>
+  <div
+    className="
+      grid
+      grid-cols-1
+      sm:grid-cols-2
+      md:grid-cols-3
+      gap-6
+      justify-center
+      mx-auto
+      max-w-6xl
+    "
+  >
+    {/* Card 1 */}
+    <Link to="/productos">
+      <div className="relative bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
+        <img src={imgLenceria} 
+             className="w-full object-cover" />
+        <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 flex items-center justify-center text-white text-4xl font-semibold transition-opacity duration-300">Lencería</div>
+      </div>
+    </Link>
 
-             {/* Tarjeta de Bombis */}   
-             <Link to="/productos">
-            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <img src={imgBombis} 
-                     alt="Producto 1" 
-                     className="object-cover"/>
-            </div>
-            </Link>
+    {/* Card 2 */}
+    <Link to="/productos">
+      <div className="relative bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
+        <img src={imgBombis} className="w-full object-cover" />
+        <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 flex items-center justify-center text-white text-4xl font-semibold transition-opacity duration-300">Bombis</div>
+      </div>
+    </Link>
 
-             {/* Tarjeta de Bikinis */}
-             <Link to="/productos">
-            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <img src={imgBikinis} 
-                alt="Producto 1" 
-                className="object-cover"/>
-            </div>
-             </Link>
-             
-             {/* Tarjeta de Blanqueria */}   
-            <Link to="/productos">
-            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <img src={imgBlanqueria} 
-                alt="Producto 1" 
-                className="object-cover"/>
-            </div>
-            </Link>
+    {/* Card 3 */}
+    <Link to="/productos">
+      <div className="relative bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
+        <img src={imgBikinis} className="w-full object-cover" />
+        <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 flex items-center justify-center text-white text-4xl font-semibold transition-opacity duration-300">Bikinis</div>
+      </div>
+    </Link>
 
-            {/* Tarjeta de Deportivo */}
-            <Link to="/productos">  
-            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <img src={imgDeportivo} 
-                alt="Producto 1" 
-                className="object-cover"/>
-            </div>
-            </Link> 
+    {/* Card 4 */}
+    <Link to="/productos">
+      <div className="relative bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
+        <img src={imgBlanqueria} className="w-full object-cover" />
+        <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 flex items-center justify-center text-white text-4xl font-semibold transition-opacity duration-300">Blanquería</div>
+      </div>
+    </Link>
 
-            
+    {/* Card 5 */}
+    <Link to="/productos">
+      <div className="relative bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
+        <img src={imgDeportivo} className="w-full object-cover" />
+        <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 flex items-center justify-center text-white text-4xl font-semibold transition-opacity duration-300">Deportivo</div>
+      </div>
+    </Link>
+  </div>
+</div>
 
-            
-    </div>
-    </div>
+
   )
 }   
 export default Cards;
