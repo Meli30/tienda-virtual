@@ -34,14 +34,14 @@ const Header = () => {
 
     {/* --- 1. PRIMERA FILA (Título + Login) --- */}
     <div className="flex flex-col items-center text-center p-4 
-                    sm:flex-row sm:justify-between sm:items-center sm:text-left gap-3">
+                    sm:flex-row sm:justify-between sm:items-center sm:text-left gap-2">
 
       {/* IZQUIERDA (vacío para alineación en desktop) */}
       <div className="hidden sm:block w-1/3"></div>
 
       {/* TÍTULO */}
-      <figure className="text-3xl font-bold sm:w-1/3">
-        buscando nombre
+      <figure className="text-3xl font-bold sm:text-4xl md:text-5xl">
+      Loca Linda 
       </figure>
 
       {/* LOGIN / USUARIO */}
@@ -80,7 +80,7 @@ const Header = () => {
     {/* --- 2. FRASE BIENVENIDA --- */}
     <div className="text-center px-4 pb-2">
       <p className="text-sm sm:text-base">
-        ¡¡Bienvenida buscando nombre!! | Te estábamos esperando | Envíos a todo el país
+        ¡¡Bienvenida a Loca Linda!! | Te estábamos esperando | Envíos a todo el país
       </p>
     </div>
 
@@ -93,7 +93,7 @@ const Header = () => {
 
         <p>📞 +5493576525383</p>
         <p>📍 Arroyito-Córdoba</p>
-        <p>✉️ buscandonombre@gmail.com</p>
+        <p>✉️ localinda@gmail.com</p>
       </div>
 
       {/* Buscador responsive */}
@@ -101,7 +101,7 @@ const Header = () => {
         <input
           type="text"
           placeholder="Buscar productos..."
-          className="p-2 rounded-l-2xl bg-amber-200 text-black flex-grow"
+          className="p-2 rounded-l-2xl bg-amber-200 text-black w-full focus:outline-none"
         />
         <button className="bg-amber-700 p-2 rounded-r-2xl hover:bg-amber-500 text-white">
           Buscar
